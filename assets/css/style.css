@@ -307,6 +307,13 @@ img{
     margin-left: var(--mb-0-5);
     transition: .3s;
 }
+.button--white {
+    color:#fff;
+    background-color: var(--first-color);
+}
+.button--white:hover{
+    background-color:var(--first-color-alt);
+}
 
 .button--flex {
     display: inline-flex;
@@ -535,5 +542,31 @@ img{
     outline: none;
 }
 
+.project{
+    text-align: center;
+}
+.project_bg {
+    /* background-color:#F8F8F8; */
+    background-image: url(/assets/img/projectIdea.jpg);
+    background-repeat: no-repeat;
+    background-position-x: left;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 
+}
+.project_title {
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-0-75);
+}
+.project_subtitle {
+    margin-bottom: var(--mb-1-5);
+}
+.project_title,
+.project_subtitle {
+    color: #000;
+}
+.project_img {
+    width: 232px;
+    justify-self: center;
+}
 
