@@ -1,0 +1,1 @@
+Mobile view initiated for responsiveness for all mobile devices
