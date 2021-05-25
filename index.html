@@ -20,7 +20,7 @@
                <div class="nav_menu" id="nav-menu">
                    <ul class="nav_list grid">
                        <li class="nav_item">
-                           <a href="#home" class="nav_link">
+                           <a href="#home" class="nav_link active-link">
                             <i class="uil uil-home nav_icon"></i>Home
                            </a>
                        </li>
@@ -53,6 +53,9 @@
                    <i class="uil uil-times nav_close" id="nav-close"></i>
                </div>
                <div class="nav_btns">
+                    <!-- change theme -->
+                   <i class="uil uil-moon change-theme" id="theme-button"></i>
+
                    <div class="nav_toggle" id="nav-toggle">
                     <i class="uil uil-apps"></i>
                    </div>
@@ -415,7 +418,7 @@
             </section>
 
             <!--==================== PROJECT IN MIND ====================-->
-            <section class="project section">
+            <section class="project section" id="project">
                 <div class="project_bg">
                     <div class="project_container container grid">
                         <div class="project_data">
@@ -434,7 +437,7 @@
             </section>
 
             <!--==================== TESTIMONIAL ====================-->
-            <section class="testimonial section">
+            <section class="testimonial section" id="testimonial">
                 <h2 class="section_title">Testimonials</h2>
                 <span class="section_subtitle">Feedback from Clients</span>
 
@@ -582,10 +585,45 @@
         </main>
 
         <!--==================== FOOTER ====================-->
-        <footer class="footer">
+        <footer class="footer" id="footer">
+            <div class="footer_bg">
+                <div class="footer_container container grid">
+                    <div>
+                        <h1 class="footer_title">Joseph</h1>
+                        <span class="footer_subtitle">Frontend developer</span>
+                    </div>
+                    <ul class="footer_links">
+                        <li>
+                            <a href="#about" class="footer_link">About</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio" class="footer_link">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="footer_link">Contact Me</a>
+                        </li>
+                    </ul>
+                    <div class="footer_socials">
+                        <a href="https://github.com/" target="_blank" class="footer_social">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                        <a href="https://twitter.com/?lang=en" target="_blank" class="footer_social">
+                            <i class="uil uil-twitter-alt"></i>
+                        </a>
+                        <a href="https://www.linkedin.cn/" target="_blank" class="footer_social">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="footer_copy">&#169;Joseph. All rights reserved</p>
+            </div>
 
-            
         </footer>
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup_icon"></i>
+        </a>
+
+
 
         <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
