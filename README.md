@@ -1,10 +1,16 @@
-Dark theme preview for mobile devices
+Responsive portfolio website final previews
 
 
-![Alt text](assets/img/previews/screen3.1.png?raw=true)
+![Alt text](assets/img/previews/screenf1.png?raw=true)
 
-![Alt text](assets/img/previews/screen3.2.png?raw=true)
+![Alt text](assets/img/previews/screenf2.png?raw=true)
 
-![Alt text](assets/img/previews/screen3.7.png?raw=true)
+![Alt text](assets/img/previews/screenf3.png?raw=true)
+
+![Alt text](assets/img/previews/screenf4.png?raw=true)
+
+![Alt text](assets/img/previews/screenf5.png?raw=true)
+
+![Alt text](assets/img/previews/screenf6.png?raw=true)
 
 
