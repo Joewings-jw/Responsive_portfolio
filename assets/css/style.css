@@ -7,7 +7,7 @@
 
     /* Colors */
     /* Change favorite color */
-    --hue-color: 236; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    --hue-color: 250; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
     --first-color: hsl(var(--hue-color),69%,61%);
@@ -434,8 +434,8 @@ img{
 
 /* SERVICES */
 .services_container {
-    gap: 1.25rem;
-    grid-template-columns: repeat(2, 1fr);
+    gap: 6rem;
+    grid-template-columns: repeat(3, 1fr);
 }
 .services_content {
     position:relative;
@@ -443,7 +443,7 @@ img{
     padding: 3.5rem .5rem 1.25rem 1.5rem;
     border-radius: .25rem;
     box-shadow: 0 2px 4px rgba(0,0,0,.15);
-    transition: .3s;
+    transition: .8s;
 }
 .services_content:hover {
     box-shadow: 0 4px 8px rgba(0,0,0,.25);
@@ -454,10 +454,15 @@ img{
     color: var(--first-color);
     margin-bottom: var(--mb-1);
 }
-.services_title {
+.services_title,
+.services_subsection-title {
     font-size: var(--h3-font-size);
     margin-bottom: var(--mb-1);
     font-weight: var(--font-medium);
+}
+.services_subsection-title,
+.services_subsection-description {
+    text-align: center;
 }
 .services_button {
     cursor: pointer;
@@ -472,7 +477,7 @@ img{
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0,0,0,.9);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -490,9 +495,9 @@ img{
     padding: 1.5rem;
     border-radius: .5rem;
 }
-.services_modal-services {
+/* .services_modal-services {
     row-gap: 1rem;
-}
+} */
 .services_modal-service {
     display: flex;
 
@@ -502,6 +507,10 @@ img{
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
     margin-bottom: var(--mb-1-5);
+    text-align: center;
+}
+.services_modal-description {
+    text-align: center;
 }
 .services_modal-close {
     position: absolute;
@@ -515,6 +524,16 @@ img{
     color: var(--first-color);
     margin-right: var(--mb-0-25);
 }
+
+.services_subsection {
+    gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+
+
+
 /* Active Modal */
 .active-modal {
     opacity: 1;
@@ -540,7 +559,7 @@ img{
     margin-bottom: var(--mb-0-5);
 }
 
-.poortfolio_description {
+.portfolio_description {
     margin-bottom: var(--mb-0-75);
 }
 .portfolio_button:hover .button_icon {
@@ -941,7 +960,9 @@ img{
         padding: 6rem 0 2rem 2.5rem
     }
     .services_modal-content {
-        width: 450px;
+        width: 900px;
+        height: 500px;
+        align-items: center;
     }
     .portfolio_img {
         width: 320px;
