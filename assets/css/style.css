@@ -434,7 +434,7 @@ img{
 
 /* SERVICES */
 .services_container {
-    gap: 6rem;
+    gap: 5rem;
     grid-template-columns: repeat(3, 1fr);
 }
 .services_content {
@@ -448,12 +448,17 @@ img{
 .services_content:hover {
     box-shadow: 0 4px 8px rgba(0,0,0,.25);
 }
-.services_icon {
+.services_icon,
+.services_sub-icon {
     display: block;
     font-size: 1.5rem;
     color: var(--first-color);
     margin-bottom: var(--mb-1);
+    margin-top: var(--mb-3);
 }
+
+
+
 .services_title,
 .services_subsection-title {
     font-size: var(--h3-font-size);
@@ -461,7 +466,7 @@ img{
     font-weight: var(--font-medium);
 }
 .services_subsection-title,
-.services_subsection-description {
+.services_subsection-description{
     text-align: center;
 }
 .services_button {
@@ -477,7 +482,7 @@ img{
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,.9);
+    background-color: rgba(0,0,0,.7);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -485,15 +490,16 @@ img{
     z-index: var(--z-modal);
     opacity: 0;
     visibility: hidden;
-    transition: .3s;
+    transition: .4s;
 
 }
 
 .services_modal-content {
     position: relative;
     background-color: var(--container-color);
-    padding: 1.5rem;
-    border-radius: .5rem;
+    padding: .5rem;
+    margin: auto;
+   
 }
 /* .services_modal-services {
     row-gap: 1rem;
@@ -506,11 +512,18 @@ img{
 .services_modal-title {
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
+    margin-top: var(--mb-1-5);
     margin-bottom: var(--mb-1-5);
     text-align: center;
 }
 .services_modal-description {
-    text-align: center;
+   width: 50%;
+   margin-left: 25%;
+   margin-top:var(--mb-2-5);
+   text-align: center;
+   /* width: 500px; */
+
+    
 }
 .services_modal-close {
     position: absolute;
@@ -526,9 +539,21 @@ img{
 }
 
 .services_subsection {
-    gap: 3rem;
-    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    grid-template-columns: repeat(3, 1fr); 
 }
+
+.services_subsection-content {
+    margin-bottom: var(--mb-3);
+} 
+.service_subsection {
+    align-items: center;
+}
+.services_sub-icon {
+    text-align: center;
+    width:100%;
+}
+
 
 
 
@@ -960,7 +985,7 @@ img{
         padding: 6rem 0 2rem 2.5rem
     }
     .services_modal-content {
-        width: 900px;
+        width: 1000px;
         height: 500px;
         align-items: center;
     }
